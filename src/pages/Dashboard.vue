@@ -4,6 +4,9 @@
 
 <script>
 export default {
-  name: 'dashboard'
+  name: 'dashboard',
+  created () {
+    console.log(123)
+  }
 }
 </script>

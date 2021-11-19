@@ -6,9 +6,19 @@ import './lib/global'
 
 import Vue from 'vue'
 import App from './App'
-import router from './router'
-import EventBus from './lib/eventBus.js'
 import axios from 'axios'
+import router from './router'
+import './permission'
+import EventBus from './lib/eventBus.js'
+
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import ptBr from 'element-ui/lib/locale/lang/pt-br'
+
+Vue.use(Element, {
+  size: 'medium',
+  locale: ptBr
+})
 
 Vue.prototype.$bus = EventBus
 Vue.prototype.$http = axios

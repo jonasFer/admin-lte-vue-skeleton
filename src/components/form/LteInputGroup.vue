@@ -36,9 +36,9 @@
 </template>
 
 <script>
-import Input from './Input'
+import Input from './LteInput'
 export default {
-  name: 'input-group',
+  name: 'lte-input-group',
   props: {
     groupType: {
       type: String,
@@ -58,8 +58,7 @@ export default {
       type: String
     },
     placeholder: {
-      type: String,
-      default: 'Enter Text...'
+      type: String
     },
     size: {
       type: String

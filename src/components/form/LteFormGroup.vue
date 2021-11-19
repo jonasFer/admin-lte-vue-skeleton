@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'form-group',
+  name: 'lte-form-group',
   created () {
 
   }

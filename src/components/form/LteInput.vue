@@ -11,7 +11,8 @@
         :class="[formControl, getSize]"
         :id="id"
         :placeholder="placeholder"
-        :value="value">
+        :value="value"
+        v-model="value">
       </input>
     </div>
 
@@ -23,12 +24,13 @@
          :placeholder="placeholder"
          :value="value"
          :disabled="isDisabled"
+         v-model="value"
   />
 </template>
 
 <script>
 export default {
-  name: 'input-form',
+  name: 'lte-input',
   props: {
     type: {
       type: String,
@@ -38,8 +40,7 @@ export default {
       type: String
     },
     placeholder: {
-      type: String,
-      default: 'Enter Text...'
+      type: String
     },
     size: {
       type: String
@@ -74,9 +75,6 @@ export default {
     formControl () {
       return this.isFormControl ? 'form-control' : ''
     }
-  },
-  created () {
-
   }
 }
 </script>

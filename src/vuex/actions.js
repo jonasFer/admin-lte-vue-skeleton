@@ -1,14 +1,14 @@
 import * as types from './mutation-types'
-import { services } from './api'
+import { services } from '../services'
+import { setToken } from '../utils/auth'
 
-export const fetchProduct = ({ commit }) => {
-  // API request
-  return services.products.getAll()
-  .then((response) => {
-    console.log(response)
-    commit(types.FETCH_PRODUCT, response.data)
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+export const login = ({ commit }, userInfo) => {
+  return services.user.login(userInfo)
+    .then((response) => {
+      commit(types.TOKEN, response.data.token)
+      setToken(response.data.token)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
 }

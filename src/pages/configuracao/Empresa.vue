@@ -8,16 +8,24 @@
         widgetType="">
         <div slot="content">
           <form>
-            <input-group
-              title="Nome"
-              id="nome"
-              type="text"
-              placeholder="Informe o nome da empresa"
-            >
-            </input-group>
+            <row>
+              <column classe="col-md-8 col-xs-12">
+                <lte-input-group
+                  title="Nome"
+                  id="nome"
+                  type="text"
+                />
+              </column>
+              <column classe="col-md-4 col-xs-12">
+                <lte-input-group
+                  title="Sigla"
+                  id="sigla"
+                  type="text"
+                />
+              </column>
+            </row>
             <div slot="footer">
               <lte-button :isBlock="false" theme="info" align="right" name="Salvar"></lte-button>
-              <lte-button :isBlock="false" align="right" name="Voltar"></lte-button>
             </div>
           </form>
         </div>
@@ -28,21 +36,17 @@
 
 <script>
 import Box from '../../widgets/Box'
-import InputGroup from '../../components/form/InputGroup'
-import CheckBox from '../../components/form/CheckBox'
+import LteInputGroup from '../../components/form/LteInputGroup'
 import LteButton from '../../components/LteButton'
 
 export default {
   name: 'config-empresa',
   components: {
     'box': Box,
-    'input-group': InputGroup,
-    'checkbox': CheckBox,
+    'lte-input-group': LteInputGroup,
     'lte-button': LteButton
+  },
+  created () {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

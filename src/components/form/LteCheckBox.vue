@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'checkbox',
+  name: 'lte-checkbox',
   props: {
     text: {
       type: String,

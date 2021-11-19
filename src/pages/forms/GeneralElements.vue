@@ -423,12 +423,12 @@
 
 <script>
 import VABox from '../../widgets/Box'
-import VAInputGroup from '../../components/form/InputGroup'
-import VACheckBox from '../../components/form/CheckBox'
-import VAInput from '../../components/form/Input'
+import VAInputGroup from '../../components/form/LteInputGroup'
+import VACheckBox from '../../components/form/LteCheckBox'
+import VAInput from '../../components/form/LteInput'
 import VAButton from '../../components/LteButton'
 import VATextareaGroup from '../../components/form/LteTextareaGroup'
-import VAFormGroup from '../../components/form/FormGroup'
+import VAFormGroup from '../../components/form/LteFormGroup'
 import VARadio from '../../components/form/LteRadio'
 import VASelect from '../../components/form/LteSelect'
 
