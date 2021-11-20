@@ -222,8 +222,8 @@
                 <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  {{ currentUser.name }} - {{ currentUser.position }}
-                  <small>{{ currentUser.createdAt }}</small>
+                  {{ currentUser.name }}
+                  <small>Cargo</small>
                 </p>
               </li>
               <!-- Menu Body -->

@@ -2,15 +2,12 @@ import {USER, TOKEN} from '../mutation-types'
 
 const state = {
   main: {
-    name: 'Alexander Pierce',
-    position: 'Web Developer',
+    id: null,
+    roles: null,
     token: null,
-    roles: ['ROLE_ADMIN'],
-    state: {
-      color: '#3c763d',
-      name: 'Online'
-    },
-    createdAt: new Date()
+    email: null,
+    avatar: null,
+    name: null
   }
 }
 

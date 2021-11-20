@@ -16,13 +16,14 @@ router.beforeEach(async (to, from, next) => {
       if (hasRoles) {
         next()
       } else {
-        console.log('else')
         try {
-          next({ ...to, replace: true })
+          store.dispatch('getInfo')
+
+          next()
         } catch (error) {
           // remove token and go to login page to re-login
-          await store.dispatch('user/resetToken')
-          next(`/login?redirect=${to.path}`)
+          // await store.dispatch('user/resetToken')
+          // next(`/login?redirect=${to.path}`)
         }
       }
     }

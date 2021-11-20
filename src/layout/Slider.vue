@@ -8,8 +8,8 @@
           <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{ currentUser.name }}</p>
-          <a href="#"><i class="fa fa-circle" :style="`color:${currentUser.state.color}`"></i> {{ currentUser.state.name }}</a>
+          <p> Nome do usuário </p>
+          <a href="#"><i class="fa fa-circle" :style="`color:green`"></i> Online </a>
         </div>
       </div>
       <!-- /.search form -->
@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import LteSliderItem from '../components/LteSlideItem'
 
 export default {
@@ -49,11 +48,6 @@ export default {
   },
   created () {
 
-  },
-  computed: {
-    ...mapGetters([
-      'currentUser'
-    ])
   },
   components: {
     'lte-slide-item': LteSliderItem

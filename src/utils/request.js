@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {getToken} from './auth'
+import { getToken } from './auth'
 
 const service = axios.create({
   baseURL: 'http://localhost:8000',
@@ -8,7 +8,7 @@ const service = axios.create({
 
 service.interceptors.request.use(
   config => {
-    if (store.getters.token) {
+    if (getToken()) {
       config.headers.Authorization = `Bearer ${getToken()}`
     }
     return config

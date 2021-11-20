@@ -1,9 +1,17 @@
-import axios from 'axios'
+import service from '../utils/request'
 
 export default {
   login (request) {
-    return axios.post('http://localhost:8000/auth', request)
-      .then((response) => Promise.resolve(response))
-      .catch((error) => Promise.reject(error))
+    return service({
+      url: 'auth',
+      method: 'post',
+      data: request
+    })
+  },
+  getInfo () {
+    return service({
+      url: 'auth/me',
+      method: 'get'
+    })
   }
 }

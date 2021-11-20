@@ -8,5 +8,3 @@ import 'jquery-ui/themes/base/datepicker.css'
 
 import 'admin-lte'
 import 'chart.js'
-
-// import 'bootstrap3-wysihtml5-bower/dist/amd/bootstrap3-wysihtml5.all.js'
