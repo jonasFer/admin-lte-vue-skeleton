@@ -24,3 +24,23 @@ export const getInfo = ({ commit }) => {
       console.error(error)
     })
 }
+
+export const getCompanyData = ({ commit }) => {
+  return services.company.me()
+    .then((response) => {
+      commit(types.COMPANY, response.data)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+}
+
+export const saveCompanyData = ({ commit }, data) => {
+  return services.company.edit(data)
+    .then(() => {
+      commit(types.COMPANY, data)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+}
