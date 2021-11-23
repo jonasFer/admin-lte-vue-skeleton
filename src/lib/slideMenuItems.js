@@ -14,7 +14,7 @@ module.exports = [
   },
   {
     type: 'tree',
-    icon: 'fa fa-dashboard',
+    icon: 'fa fa-cogs',
     name: 'Configuração',
     items: [
       {
@@ -23,6 +23,14 @@ module.exports = [
         name: 'Empresa',
         router: {
           name: 'config-empresa'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Usuários',
+        router: {
+          name: 'config-usuario'
         }
       }
     ]

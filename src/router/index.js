@@ -33,6 +33,17 @@ export default new Router({
           component: () => import('../pages/configuracao/Empresa')
         }
       ]
+    },
+    {
+      path: '/configuracao/usuario',
+      component: Layout,
+      children: [
+        {
+          path: '',
+          name: 'config-usuario',
+          component: () => import('../pages/configuracao/usuario/Usuario')
+        }
+      ]
     }
   ],
   linkActiveClass: 'active'

@@ -1,7 +1,9 @@
-import user from './user'
+import auth from './auth'
 import company from './company'
+import user from './user'
 
 export const services = {
-  user,
-  company
+  auth,
+  company,
+  user
 }

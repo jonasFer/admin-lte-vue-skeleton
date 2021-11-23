@@ -1,16 +1,9 @@
 import service from '../utils/request'
 
 export default {
-  login (request) {
+  all () {
     return service({
-      url: 'auth',
-      method: 'post',
-      data: request
-    })
-  },
-  getInfo () {
-    return service({
-      url: 'auth/me',
+      url: 'user',
       method: 'get'
     })
   }

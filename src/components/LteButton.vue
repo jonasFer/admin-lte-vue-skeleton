@@ -33,7 +33,7 @@ export default {
     },
     isBlock: {
       type: Boolean,
-      default: true
+      default: false
     },
     align: {
       type: String,

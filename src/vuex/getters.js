@@ -4,3 +4,4 @@ export const remainTasksCount = state => state.tasks.main.length
 export const currentUser = state => state.user.main
 export const roles = state => state.user.main.roles
 export const company = state => state.company
+export const users = state => state.users.main

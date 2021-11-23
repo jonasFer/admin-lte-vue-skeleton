@@ -1,4 +1,5 @@
 export const USER = 'USER'
+export const USERS = 'USERS'
 export const TOKEN = 'TOKEN'
 export const ROUTES = 'ROUTES'
 export const COMPANY = 'COMPANY'

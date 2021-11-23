@@ -7,9 +7,9 @@ export default {
       method: 'get'
     })
   },
-  edit (request) {
+  edit (id, request) {
     return service({
-      url: 'company/1', // @Todo alterar para deixar como variável
+      url: `company/${id}`,
       method: 'put',
       data: request
     })
